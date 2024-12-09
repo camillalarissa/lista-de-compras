@@ -1,0 +1,167 @@
+/* Reset básico para padronização */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilando o corpo da aplicação */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #e4e8ef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Título da aplicação */
+h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* Container principal da aplicação */
+#app {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 480px;
+    transition: box-shadow 0.3s ease;
+}
+
+#app:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Input responsivo */
+.task-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.task-input:focus {
+    border-color: #8a4dff;
+}
+
+/* Botão para adicionar produtos */
+.add-task-btn {
+    background-color: #8a4dff;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 5px;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+.add-task-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Lista Responsiva */
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    overflow: auto;
+    max-height: 300px;
+}
+
+/* Estizando cada item da lista */
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border: 1px solid #aaa;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    transition: all 0.2s ease;
+    color: #333;
+    font-weight: 500;
+}
+
+li:hover {
+    background-color: #e3e3e3;
+}
+
+/* Checkbox para tarefas */
+.task-check {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Texto riscado para tarefas concluídas */
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/*Botão excluir*/
+.delete-btn {
+    background-color: #f9f9f9;
+    border: none;
+    cursor: pointer;
+    border-radius: 1px;
+}
+
+.delete-btn:hover {
+    background-color: #E3E3E3;
+}
+
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #app {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .task-input {
+        font-size: 14px;
+    }
+
+    .add-task-btn {
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .task-input {
+        font-size: 12px;
+    }
+
+    .add-task-btn {
+        font-size: 12px;
+    }
+
+    li {
+        font-size: 12px;
+    }
+
+    .task-check {
+        width: 18px;
+        height: 18px;
+    }
+}
