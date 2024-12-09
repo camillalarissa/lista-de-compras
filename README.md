@@ -27,3 +27,7 @@ Este projeto é uma aplicação simples de **Lista de Compras**, onde você pode
 
 
 ![{DF9E040F-1707-4C77-8D93-2266A944FA8D}](https://github.com/user-attachments/assets/e93144bd-9753-4205-81d4-04de03b79f5e)
+<br>
+<br>
+## Veja o Site 
+ [aqui](https://lista-de-compras-sepia-seven.vercel.app/).
